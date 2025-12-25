@@ -62,12 +62,16 @@ def parse_user_query(text: str):
 
 if __name__ == "__main__":
     tests = [
-        "need shoes under 6000",
-        "show me phones below 15k",
-        "jacket less than 10000",
-        "i want sneakers"
+        "show me sneakers under 6000",
+        "compare nike vs adidas shoes",
+        "i want to buy a jacket",
+        "reserve this shirt in store",
+        "i want to return my order",
+        "show me some good phones under 15k"
     ]
 
     for t in tests:
-        print(t, "=>", extract_intent(t))
+        print(t)
+        print(parse_user_query(t))
+        print()
 
