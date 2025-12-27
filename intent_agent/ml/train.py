@@ -54,7 +54,18 @@ def train():
 
     print("Training complete.")
 
+    # Save model
+    save_path = "../models/intent_classifier"
+    model.save_pretrained(save_path)
+    dataset.tokenizer.tokenizer.save_pretrained(save_path)
+
+    print(f"Model saved to {save_path}")
+    
+
 if __name__=="__main__":     
     train()
+
+
+    
 
 
