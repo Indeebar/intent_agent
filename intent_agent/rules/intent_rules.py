@@ -1,4 +1,4 @@
-def extract_intent(text: str):
+def extract_intent_rule_based(text: str):
     text=text.lower()
     intent_keywords = {
         "purchase": ["want","buy", "purchase", "order", "checkout"],
